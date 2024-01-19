@@ -422,9 +422,36 @@ input[type="search"] {
   width: 100%;
 }
 
+.col a,
+.col-2 {
+  color: white;
+  opacity: 0.5;
+}
+
+.col a:hover,
+.col-2:hover {
+  opacity: 1 !important;
+}
+
 .row a {
   text-decoration: none;
   color: white;
+}
+
+.line::before {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
+}
+
+.line::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
 }
 
 /* Add Main Content CSS here */
