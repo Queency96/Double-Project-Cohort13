@@ -1,0 +1,224 @@
+td{
+    border: 1px solid;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.demo{
+    border: none;
+
+}
+.size{
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+}
+.head{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+ul a{
+    text-decoration: none;
+    list-style: none;
+}
+ul a li{
+    margin: 5px 0px;
+    font-size: 13px;
+    color: black;
+}
+ul li a{
+    color: black;
+}
+td a{
+    text-decoration: none;
+    color: black;
+}
+ul li {
+    list-style: none;
+}
+#demo3{
+    width: 70px;
+    margin-right:10px;
+}
+.numbers{
+    justify-content: space-between;
+    align-items: center;
+}
+#GO{
+    border: 1px solid ;
+    padding: 0px 12px;
+    background-color: white;
+    max-width: 50px;
+}
+#GO:hover{
+    background-color: #ed017f;
+}
+
+.ground{
+    background-color: #f2f2f2
+}
+#search{
+    width: 100%;
+    border: none;
+    background-color: #f2f2f2;
+}
+#brands{
+    padding: 5px 7px;
+    width: 100%;
+    font-size: 12px;
+}
+#text{
+    color: lightgray;
+}
+img{
+    height: 200px;
+    width: 100%;
+}
+.flex{
+    gap: 15px;
+    align-items: center;
+}
+.col-3{
+    width: 23%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.stars{
+    font-size: 12px;
+}
+button {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #ed017f;
+    color: #ed017f;
+
+}
+.delivery{
+    color: #ed017f;
+}
+.line{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 7px 0px;
+}
+.del-size{
+    font-size: 12px;
+}
+.konga-span{
+    color: #644ba0;
+}
+.col:hover{
+    box-shadow: 0px 0px 10px 0px grey;
+}
+.text{
+    background-color: #edcbde;
+    color: #ff3b3b;
+    border-radius: 7px;
+    font-size: 12px;
+}
+button:hover{
+    background-color: #ed017f;
+    color: white;
+}
+.bg-light{
+    background-color: #fff;
+}
+.naira-input{
+    position: relative;
+}
+::placeholder{
+    padding-left: 12px;
+}
+input{
+    padding-left: 12px
+}
+.naira2{
+    position:absolute;
+    top: 8px;
+    color: black;
+}
+.naira1{
+    position: absolute;
+    top: 8px;
+    color: black;
+}
+@media (min-width: 720px) and (max-width: 1220px){
+    .col{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .col-9{
+        width: 65%;
+        margin: auto;
+        padding: 0px;
+    }
+    .image{
+        width: 90%;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .position{
+        max-width: fit-content;
+        width: 30%;
+        
+    }
+}
+@media (min-width: 850px) and (max-width: 950px){
+    .position{        
+        display: none;
+    }
+    .image{
+        width: 100%;
+    }
+    .col-9{
+        width: 100%;
+    }
+    .col{
+        width: 22%;
+    }
+}
+@media (min-width: 400px) and (max-width: 800px){
+    .col{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    .col-9{
+        
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    .image{
+        width: 100%;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .position{
+        display: none;
+        background-color: red;
+    }
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .col{
+        width: 100%;
+    }
+    .col-9{
+        width: 100%;
+        
+    }
+}
