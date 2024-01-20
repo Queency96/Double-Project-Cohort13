@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Chiddyfyne-Cohort-13/youTubeHomepage.css">
+    <link rel="stylesheet" href="/Chiddyfyne-Cohort-13/subscriptions.css">
+    <script src="https://kit.fontawesome.com/2674b6f1df.js" crossorigin="anonymous"></script>
+    <title>YouTube Design</title>
+  </head>
+  <body>
+
+        <div class="container-wrapper border border-0 border-success">
+
+            <div class="nav__header">
+                <div class="logo">
+                    <a href="/Chiddyfyne-Cohort-13/youTubeHomepage.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.9 85.1" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <path fill="#ff0000" d="M 60.699219 0.30078125 C 60.699219 0.30078125 22.699219 0.30078125 13.199219 2.8007812 C 7.9992187 4.2007813 3.9 8.3 2.5 13.5 C 0 23 0 42.699219 0 42.699219 C 0 42.699219 0 62.500391 2.5 71.900391 C 3.9 77.100391 7.9992188 81.199609 13.199219 82.599609 C 22.699219 85.099609 60.699219 85.099609 60.699219 85.099609 C 60.699219 85.099609 98.699219 85.099609 108.19922 82.599609 C 113.39922 81.199609 117.50039 77.100391 118.90039 71.900391 C 121.40039 62.400391 121.40039 42.699219 121.40039 42.699219 C 121.40039 42.699219 121.40039 23 118.90039 13.5 C 117.50039 8.3 113.39922 4.2007812 108.19922 2.8007812 C 98.699219 0.30078125 60.699219 0.30078125 60.699219 0.30078125 z M 48.5 24.5 L 80.099609 42.800781 L 48.5 61 L 48.5 24.5 z "></path>
+                        <path fill="#ffffff" d="M 48.5,61 80.1,42.8 48.5,24.5 Z"></path>
+                        <path d="M147.1 55.5L133.5 6.2h11.9l4.8 22.3c1.2 5.5 2.1 10.2 2.7 14.1h.3c.4-2.8 1.3-7.4 2.7-14l5-22.4h11.9L159 55.5v23.7h-11.8l-.1-23.7zm29.2 22.1c-2.4-1.6-4.1-4.1-5.1-7.6-1-3.4-1.5-8-1.5-13.6v-7.7c0-5.7.6-10.3 1.7-13.8 1.2-3.5 3-6 5.4-7.6 2.5-1.6 5.7-2.4 9.7-2.4 3.9 0 7.1.8 9.5 2.4s4.1 4.2 5.2 7.6 1.7 8 1.7 13.8v7.7c0 5.7-.5 10.2-1.6 13.7-1.1 3.4-2.8 6-5.2 7.6-2.4 1.6-5.7 2.4-9.8 2.4-4.3-.1-7.6-.9-10-2.5zm13.5-8.3c.7-1.7 1-4.6 1-8.5V44.2c0-3.8-.3-6.6-1-8.4s-1.8-2.6-3.5-2.6c-1.6 0-2.8.9-3.4 2.6-.7 1.8-1 4.6-1 8.4v16.6c0 3.9.3 6.8 1 8.5.6 1.7 1.8 2.6 3.5 2.6 1.5 0 2.7-.9 3.4-2.6zm51.7-43.4v53.3h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.9h12V65c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.9h12z"></path>
+                        <path d="M274.1 15.9h-11.9v63.3h-11.7V16h-11.9V6.4h35.5v9.5z"></path>
+                        <path d="M303 25.9v53.3h-9.4l-1-6.5h-.3c-2.5 4.9-6.4 7.4-11.5 7.4-3.5 0-6.1-1.2-7.8-3.5-1.7-2.3-2.5-5.9-2.5-10.9V25.9h12V65c0 2.4.3 4.1.8 5.1s1.4 1.5 2.6 1.5c1 0 2-.3 3-1 1-.6 1.7-1.4 2.1-2.4V25.9h12zm39.7 8.5c-.7-3.4-1.9-5.8-3.5-7.3s-3.9-2.3-6.7-2.3c-2.2 0-4.3.6-6.2 1.9-1.9 1.2-3.4 2.9-4.4 4.9h-.1V3.5h-11.6v75.7h9.9l1.2-5h.3c.9 1.8 2.3 3.2 4.2 4.3 1.9 1 3.9 1.6 6.2 1.6 4.1 0 7-1.9 8.9-5.6 1.9-3.7 2.9-9.6 2.9-17.5v-8.4c0-6.2-.4-10.8-1.1-14.2zm-11 21.7c0 3.9-.2 6.9-.5 9.1-.3 2.2-.9 3.8-1.6 4.7-.8.9-1.8 1.4-3 1.4-1 0-1.9-.2-2.7-.7-.8-.5-1.5-1.2-2-2.1V38.3c.4-1.4 1.1-2.6 2.1-3.6 1-.9 2.1-1.4 3.2-1.4 1.2 0 2.2.5 2.8 1.4.7 1 1.1 2.6 1.4 4.8.3 2.3.4 5.5.4 9.6l-.1 7zm29.1.4v2.7c0 3.4.1 6 .3 7.7.2 1.7.6 3 1.3 3.7.6.8 1.6 1.2 3 1.2 1.8 0 3-.7 3.7-2.1.7-1.4 1-3.7 1.1-7l10.3.6c.1.5.1 1.1.1 1.9 0 4.9-1.3 8.6-4 11s-6.5 3.6-11.4 3.6c-5.9 0-10-1.9-12.4-5.6-2.4-3.7-3.6-9.4-3.6-17.2v-9.3c0-8 1.2-13.8 3.7-17.5s6.7-5.5 12.6-5.5c4.1 0 7.3.8 9.5 2.3s3.7 3.9 4.6 7c.9 3.2 1.3 7.6 1.3 13.2v9.1h-20.1v.2zm1.5-22.4c-.6.8-1 2-1.2 3.7s-.3 4.3-.3 7.8v3.8h8.8v-3.8c0-3.4-.1-6-.3-7.8-.2-1.8-.7-3-1.3-3.7-.6-.7-1.6-1.1-2.8-1.1-1.3 0-2.3.4-2.9 1.1z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="nav__header--right">
+                    <div class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+                        </svg>
+                    </div>
+
+                    <div >
+                        <a href="#"><span class="profile"></span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <main>
+
+                <div class="sub-row d-flex gap-4 py-2 px-3">
+                    
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536947/OTS-cohort-13/AIf8zZR3S2asmB22WY9Y2KWTT68mG5rX6HyNQjSXuA1iVA_s68-c-k-c0x00ffffff-no-rj_m8xrfj.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536983/OTS-cohort-13/GvLVEeRTpi3gU6nPSrLMOxwZ_vvh6QO-Vn20wfqFQ9o9sALBjTfLvGud1EfkeSM8AdDC_929_s68-c-k-c0x00ffffff-no-rj_vioqxi.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704537359/OTS-cohort-13/AIf8zZT7vmpFR7FtCb9QaBLWm3nSEAPyetNvspG447QpJQ_s68-c-k-c0x00ffffff-no-rj_asvl2s.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704537698/OTS-cohort-13/AIf8zZT65GmAXWyqXXPl4QzgNf3ed9TFVZO7xxU8JmX-cc0_s68-c-k-c0x00ffffff-no-rj_kmgt9i.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+                    
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704537641/OTS-cohort-13/AIf8zZQKCG8w7wVznj9sHhrHge3cKYVuUblDUuOaUp_psQ_s68-c-k-c0x00ffffff-no-rj_dj3t1r.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_40,h_40,ar_1:1,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704537782/OTS-cohort-13/yigrovlVTMKesGngkFlLuYBSyP6EPIfFa1DIC-IMpsivtFn3r4QKx2lFinFT7O8PXXLQ6ac1Zdw_s68-c-k-c0x00ffffff-no-rj_ewss0f.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_40,h_40,ar_1:1,g_auto/v1704532983/OTS-cohort-13/images_wg1dti.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704534215/OTS-cohort-13/images_jzp0ds.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702790790/OTS-cohort-13/blackMani_g6wcmo.png" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786102/OTS-cohort-13/pexels-hannah-nelson-1065084_gyidtu.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786099/OTS-cohort-13/pexels-godisable-jacob-871495_quayva.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786098/OTS-cohort-13/pexels-andrea-piacquadio-733872_qgo1at.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1701300683/OTS-cohort-13/blackwoman1_miobaw.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786099/OTS-cohort-13/pexels-karsten-madsen-18105_g6pp9d.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1/v1702779595/OTS-cohort-13/laptop_on45jn.png" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+                    
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537764/OTS-cohort-13/hq720_gezjpu.webp" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1701288343/OTS-cohort-13/blackman1_hoamck.jpg" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537615/OTS-cohort-13/hq720_rowb7a.webp" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+                    
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537197/OTS-cohort-13/hq720_mvbnrx.webp" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after1"></div>
+                    </div>
+
+                    <div class="sub1">
+                        <div class="sub-img">
+                            <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537510/OTS-cohort-13/hq720_khlcmb.webp" alt="" class="rounded-circle" height="40px"></a>
+                        </div>
+                        <div class="after2"></div>
+                    </div>
+                </div>
+
+                <div class="my-4 sub__section1"> 
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 card1 py-4">
+
+                            <div class="col-xxl-2 col-lg-3 col-sm-5">
+                                    <div class="img">
+
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                            <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_pad,b_gen_fill,w_360,h_160,ar_16:9/v1704537197/OTS-cohort-13/hq720_mvbnrx.webp"
+                                        class="img-fluid rounded-4 w-100 h-100">
+                                        </a>
+                                        
+                                        <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                            <span >
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                            </span>
+                                            <span>2</span>
+                                        </div>
+                                    </div>                           
+                            </div>
+
+                            <div class="col-xxl-10 col-lg-9 col-sm-7">
+                                    <div class="card-body d-flex ps-4 justify-content-between">
+                                        <div class="playlist__title">
+                                            <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                            <p class="card-text my-1">
+                                                <span>Channels Tv.</span>
+                                                <span class="dot">20k views</span>
+                                                <span class="dot">25 minutes ago</span>
+                                            </p>
+                                            <div class="sub-img">
+                                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536983/OTS-cohort-13/GvLVEeRTpi3gU6nPSrLMOxwZ_vvh6QO-Vn20wfqFQ9o9sALBjTfLvGud1EfkeSM8AdDC_929_s68-c-k-c0x00ffffff-no-rj_vioqxi.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_pad,b_gen_fill,w_360,h_160,ar_16:9/v1704537764/OTS-cohort-13/hq720_gezjpu.webp"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537764/OTS-cohort-13/hq720_gezjpu.webp" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_360,h_160,g_auto/v1704537510/OTS-cohort-13/hq720_khlcmb.webp"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536947/OTS-cohort-13/AIf8zZR3S2asmB22WY9Y2KWTT68mG5rX6HyNQjSXuA1iVA_s68-c-k-c0x00ffffff-no-rj_m8xrfj.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_360,h_160,ar_16:9,g_auto/v1702786098/OTS-cohort-13/pexels-andrea-piacquadio-733872_qgo1at.jpg"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786098/OTS-cohort-13/pexels-andrea-piacquadio-733872_qgo1at.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" px-0 my-4 sub__section2">
+
+                    <div class=" px-4 d-flex align-items-center justify-content-between  mb-4 lib__sect">
+                        <div class=" d-flex gap-3 align-items-center
+                         lib__sect--left">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g>
+                                      <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
+                                      <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+                                    </g>
+                                  </svg>
+                            </span>
+                            <h2 class="mb-0">Shorts</h2>
+                        </div>
+    
+                        <div class="text-primary font-weight-bold lib__sect--right">View all</div>
+                    </div>
+
+                    <div class="row ms-4 pe-4 g-3  mx-0 sub-row2">
+
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative border-0 rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300/v1704534215/OTS-cohort-13/images_jzp0ds.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative sub-card2 rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300/v1702790790/OTS-cohort-13/blackMani_g6wcmo.png" class="card-img rounded-4" alt="...">
+        
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704537051/OTS-cohort-13/hq720_h0nj37.webp" class="card-img rounded-4" alt="...">
+                               
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1702786102/OTS-cohort-13/pexels-hannah-nelson-1065084_gyidtu.jpg" class="card-img rounded-4" alt="...">
+     
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704531776/OTS-cohort-13/images_f9rbcn.jpg" class="card-img rounded-4" alt="...">
+                               
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1701288343/OTS-cohort-13/blackman1_hoamck.jpg" class="card-img rounded-4" alt="...">
+                              
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704537197/OTS-cohort-13/hq720_mvbnrx.webp" class="card-img rounded-4" alt="...">
+                               
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                               
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                     <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card text-bg-dark position-relative rounded-4" style="height: 300px; width: 200px;">
+
+                                <div class="overlay rounded-4"></div>
+                                <a href="#">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_200,h_300,g_auto/v1704536208/OTS-cohort-13/rs_634x939-181202195654-634.captain-marvel.12418_tdm4pi.jpg" class="card-img rounded-4" alt="...">
+                                
+                                    <div class="card-img-overlay px-2">
+                                        <div class="d-flex justify-content-end"> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                                        <div class="sub-short-txt position-absolute">
+                                            <h6 class="card-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                                            <p class="card-text">12k views</p>
+                                        </div>                                
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="my-4 sub__section1"> 
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+
+                            <div class="col-xxl-2 col-lg-3 col-sm-5">
+                                    <div class="img">
+
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                            <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_pad,b_gen_fill,w_360,h_160,ar_16:9/v1704537197/OTS-cohort-13/hq720_mvbnrx.webp"
+                                        class="img-fluid rounded-4 w-100 h-100">
+                                        </a>
+                                        
+                                        <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                            <span >
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                            </span>
+                                            <span>2</span>
+                                        </div>
+                                    </div>                           
+                            </div>
+
+                            <div class="col-xxl-10 col-lg-9 col-sm-7">
+                                    <div class="card-body d-flex ps-4 justify-content-between">
+                                        <div class="playlist__title">
+                                            <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                            <p class="card-text my-1">
+                                                <span>Channels Tv.</span>
+                                                <span class="dot">20k views</span>
+                                                <span class="dot">25 minutes ago</span>
+                                            </p>
+                                            <div class="sub-img">
+                                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536983/OTS-cohort-13/GvLVEeRTpi3gU6nPSrLMOxwZ_vvh6QO-Vn20wfqFQ9o9sALBjTfLvGud1EfkeSM8AdDC_929_s68-c-k-c0x00ffffff-no-rj_vioqxi.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_pad,b_gen_fill,w_360,h_160,ar_16:9/v1704537764/OTS-cohort-13/hq720_gezjpu.webp"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1704537764/OTS-cohort-13/hq720_gezjpu.webp" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-0 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_360,h_160,g_auto/v1704537510/OTS-cohort-13/hq720_khlcmb.webp"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/v1704536947/OTS-cohort-13/AIf8zZR3S2asmB22WY9Y2KWTT68mG5rX6HyNQjSXuA1iVA_s68-c-k-c0x00ffffff-no-rj_m8xrfj.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0" style="height: fit-content;">
+                        <div class="row g-0 sub-card3 py-4">
+                          <div class="col-xxl-2 col-lg-3 col-sm-5">
+
+                            <div class="img">
+
+                                <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0">
+                                    <img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,w_360,h_160,ar_16:9,g_auto/v1702786098/OTS-cohort-13/pexels-andrea-piacquadio-733872_qgo1at.jpg"
+                                class="img-fluid rounded-4 w-100 h-100">
+                                </a>
+                                
+                                <div class="timer position-absolute rounded-3 d-flex gap-2">
+                                    <span >
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; "><path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path></svg>
+                                    </span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="col-xxl-10 col-lg-9 col-sm-7">
+                            <div class="card-body d-flex ps-4 justify-content-between">
+                                <div class="playlist__title">
+                                    <h5 class="card-title mb-1">Lorem ipsum dolor sit, amet consectetur adipisi</h5>
+                                    <p class="card-text my-1">
+                                        <span>Channels Tv.</span>
+                                        <span class="dot">20k views</span>
+                                        <span class="dot">25 minutes ago</span>
+                                    </p>
+                                    <div class="sub-img">
+                                        <a href="https://www.youtube.com/watch?v=9lH_vwn7oo0"><img src="https://res.cloudinary.com/du2rjnoya/image/upload/c_fill,ar_1:1,g_auto/v1702786098/OTS-cohort-13/pexels-andrea-piacquadio-733872_qgo1at.jpg" alt="" class="rounded-circle" height="40px"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class=""> <i class="fa-solid fa-ellipsis-vertical"></i></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <ul>
+                    <li class=""><a href="/Chiddyfyne-Cohort-13/youTubeHomepage.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none;"><path d="m12 4.44 7 6.09V20h-4v-6H9v6H5v-9.47l7-6.09m0-1.32-8 6.96V21h6v-6h4v6h6V10.08l-8-6.96z"></path></svg>
+                        <span>Home</span></a>  
+                    </li>
+
+                    <li class=""><a href="/Chiddyfyne-Cohort-13/shorts.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+                        <span>Shorts</span></a>  
+                    </li>
+
+                    <li class=""><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none;"><path d="M20 7H4V6h16v1zm2 2v12H2V9h20zm-7 6-5-3v6l5-3zm2-12H7v1h10V3z"></path></svg>
+                        <span>Subscriptions</span></a>  
+                    </li>
+                    <li class=""><a href="/Chiddyfyne-Cohort-13/library.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                        <span>Library</span></a>  
+                    </li>
+                </ul>
+
+            </footer>
+
+        </div>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+        ></script>
+
+
+  </body>
+</html>
