@@ -539,4 +539,8 @@ input[type="search"] {
   .mobile-only {
     display: block !important;
   }
+
+  .desktop-only {
+    display: none;
+  }
 }
