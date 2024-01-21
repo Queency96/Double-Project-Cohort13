@@ -1,0 +1,25 @@
+.flex{
+    position: relative;
+    display:flex;
+    margin-top: 58px;
+
+
+}
+.move {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+   margin-left: 80px;
+   margin-top: -7px;
+    
+   
+}
+.sup{
+    margin-top: -5px;
+
+}
+
+.text{
+    text-decoration: none;
+}
+

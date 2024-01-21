@@ -1,0 +1,75 @@
+
+
+.flex1{
+    display:inline-flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.card-text{
+    color: white;
+    margin-top: 250px;
+}
+
+.card-text1{
+    color: white;
+    margin-top: 120px;
+}
+
+.text{
+    text-decoration: none;
+    text-wrap: wrap;
+}
+.card-title{
+    text-decoration: none;
+}
+.ken{
+    margin-left: 20px;
+}
+h2{
+
+    padding: 10px;
+
+}
+h4{
+    padding-top: 30px;
+}
+.card-flex{
+    display:inline-flex;
+    flex-direction: column;
+} 
+.card-img{
+    position: relative;
+}
+
+
+ /* my short game css */
+
+
+.down{
+    margin-top: 200px;
+}
+.pad{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.fa{
+margin-left: 110px;
+position: absolute;
+}
+
+        /* My Media Query */
+
+
+@media (min-width:300px) {
+
+    .fa{
+        margin-left: 400px;
+        position:absolute;
+            
+    }
+    
+

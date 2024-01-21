@@ -1,0 +1,60 @@
+
+
+.flex{
+    display:flex;
+    margin-bottom: 120px;
+}
+.move {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+   margin-left: 135px;
+   margin-top: -5px;
+    
+   
+}
+.fa-check-circle{
+    margin-top:12px;
+    margin-left: 80px;
+    position: absolute;
+}
+.move a{
+    padding-left:-40px; 
+    text-decoration: none;
+}
+
+.sup{
+    margin-top: -10px;
+    /* margin-left:2%; */
+    font-size: smaller;
+    /* position: absolute; */
+}
+/* .sub{
+ margin-left:-px; 
+} */
+
+.p{
+    margin-top: -14px;
+}
+
+.btn{
+   
+   width: 25%;
+}
+
+.afro{
+    margin: 20px;
+
+}
+
+.music{
+    display:flex;
+
+}
+.music a{
+    text-decoration: none;
+    font-size: small;
+    padding-left: 10px;
+
+}
+
