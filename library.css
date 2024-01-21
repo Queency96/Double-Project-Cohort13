@@ -1,0 +1,36 @@
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+main{
+    padding: 90px 0;
+}
+
+.lib-row1{
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.lib-row1::-webkit-scrollbar{
+    display: none;
+}
+
+.lib__section2{
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.playlist__title p{
+    line-height: 0;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.timer svg{
+    fill: white;
+}
