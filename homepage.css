@@ -237,6 +237,8 @@
   position: absolute;
   left: 10%;
   width: 90%;
+  z-index: 8;
+  background-color: white;
 }
 
 .column img,
@@ -253,6 +255,7 @@
 .myrow {
   height: 80%;
   background-color: white;
+  z-index: 10;
 }
 
 .myrow-two {
@@ -452,6 +455,10 @@ input[type="search"] {
   height: 1px;
   background-color: white;
   opacity: 0.2;
+}
+
+.footer {
+  z-index: -1000 !important;
 }
 
 /* Add Main Content CSS here */
