@@ -1,0 +1,218 @@
+
+.header{
+  position: fixed;
+  width: 100dvw;
+  z-index: 4;
+}
+/* navbar design here */
+
+
+nav{
+height: 64px;
+display: flex;
+align-items: center;
+border-top: 1px  solid lightgrey;
+border-bottom: 1px  solid lightgrey;
+width: 100%;
+padding-left: 24px;
+position: fixed;
+top: 58px;
+left: 0;
+z-index: 1;
+background-color: #fff;
+}
+
+.menu-icon{
+padding: 4px 8px;
+background-color: rgb(245, 243, 243);
+cursor:pointer;  
+position: fixed;
+position: fixed;
+top: 70px;
+left: 24px;
+z-index: 3;
+}
+
+nav ul{
+display: flex;
+gap: 32px;
+overflow: auto;
+align-items: center;
+margin: 0 0 0 32px;
+padding: 0;
+margin-left: 80px;
+}
+
+nav ul::-webkit-scrollbar{
+display: none;
+}
+
+nav ul li a{
+text-decoration: none;
+display: inline-block;
+color: #171717;
+padding: 8px 16px;
+border-radius: 10px;
+}
+
+nav ul li {
+list-style-type: none;
+background-color: rgb(245, 243, 243);
+border-radius: 10px;
+white-space: nowrap;
+}
+
+nav li:hover,nav li a:hover, nav ul li:nth-child(1){
+background-color:#4c4949;
+color: #fff;
+}
+
+nav ul li:nth-child(1) a{
+color: #fff;
+}
+
+.sidebar {
+background-color: white;
+width: 400px;
+height: 100vh;
+position: fixed;
+top: 0%;
+left: -200%;
+z-index: 5; 
+transition: all .5s ease; 
+}
+
+.sidebar ul li{
+font-weight: 600;
+padding: 20px 24px;
+}
+
+.sidebar ul li a{
+display: flex;   
+align-items: center; 
+gap: 16px;
+text-decoration: none;
+color: black;
+}
+
+.sidebar ul{
+padding: 0;
+margin-top: 32px;
+}
+
+#overlay{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+z-index: 2;
+visibility: hidden;
+}
+
+#check{
+visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+left: 0;
+}
+
+#check:checked ~ #close,#check:checked ~ #overlay{
+visibility: visible;
+}
+
+#close{
+position: fixed;
+top: 2%;
+left: 340px;
+z-index: 6;
+font-size: 32px;
+visibility: hidden;
+padding: 2px 8px;
+}
+
+.logo{
+width: 110px;
+}
+.sidebar .logo{
+margin-top: 36px;
+margin-left: 24px;
+}
+
+  /* cards design here */
+.card-middle{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.card-bottom{
+  margin-top: -20px;
+  margin-left: 55px;
+  color: gray;
+  font-size: 12px;
+}
+
+.card{
+
+position: relative;
+}
+
+
+/* time design here */
+ 
+.time{
+background-color: black;
+color: #fff;
+padding: 1px;
+width: 19%;
+font-size: 12px;
+position: absolute;
+bottom: 0;
+right: 0;
+margin-bottom: 30px;
+margin-right: 10px;
+border-radius: 5px;
+text-align: center;
+
+}
+
+
+
+/* footer design here */
+
+footer{
+padding: 10px 0px;
+margin-top: 48px;
+position: fixed;
+bottom: 0;
+width: 100%;
+background-color: #fff;
+border: 1px solid lightgray;  
+
+}
+
+footer ul li a{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+text-decoration: none;
+color: black;
+
+}
+
+footer ul{
+display: flex;
+justify-content: space-around;
+padding: 0;
+margin: 0;
+list-style-type: none;
+
+}
+
+footer span{
+font-size: 12px;
+font-weight:400;
+}
