@@ -1,0 +1,69 @@
+body{
+    overflow-x: hidden;
+}
+
+.head h1{
+    font: bolder;
+}
+ul li a{
+ text-decoration: none;
+ color: gray;
+ font-size: 20px;
+
+}
+
+.header-1 h2{
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ .mynav li a:hover{
+   padding-bottom: 14px;
+   border-bottom: 3px solid gray;
+
+ }
+
+
+  #top a{
+   
+    padding-bottom: 14px;
+    border-bottom: 3px solid black
+  }
+
+ /* cards design here */
+ .card-middle{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+ .card-bottom{
+    margin-top: -20px;
+    margin-left: 55px;
+    color: gray;
+    font-size: 12px;
+ }
+
+ .card{
+
+  position: relative;
+ }
+
+
+ /* time design here */
+   
+ .time{
+  background-color: black;
+  color: #fff;
+  padding: 1px;
+  width: 19%;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+ }
