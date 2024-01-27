@@ -548,3 +548,7 @@ input[type="search"] {
     display: none;
   }
 }
+
+object{
+  height: 450dvh;
+}
