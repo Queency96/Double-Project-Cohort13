@@ -67,3 +67,42 @@ ul li a{
   text-align: center;
 
  }
+
+ 
+/* footer design here */
+
+footer{
+  padding: 10px 0px;
+  margin-top: 48px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid lightgray;  
+  
+  }
+  
+  footer ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: black;
+  
+  }
+  
+  footer ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  
+  }
+  
+  footer span{
+  font-size: 12px;
+  font-weight:400;
+  }
+  

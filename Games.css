@@ -1,5 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+
+ .header{
+
+    border-bottom: 2px solid gray;
+    position: fixed;
+    top: 0;
+
+ }
+
+ .container-wrap{
+
+    width: 100%;
+ }
 
 
+ /* .youtube{
+  width: 100%;
+
+} */
+
+.icon{
+
+    margin-right: 20px;
+}
+.icon a{
+    padding: 10px;
+}
 .flex1{
     display:inline-flex;
     flex-direction: row;
@@ -8,6 +36,8 @@
     margin-top: 30px;
 
 }
+
+
 
 .card-text{
     color: white;
@@ -61,10 +91,48 @@ margin-left: 110px;
 position: absolute;
 }
 
+/* footer design here */
+
+footer{
+    padding: 10px 0px;
+    margin-top: 48px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid lightgray;  
+    
+    }
+    
+    footer ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: black;
+    
+    }
+    
+    footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+    }
+    
+    footer span{
+    font-size: 12px;
+    font-weight:400;
+    }
+    
+
         /* My Media Query */
 
 
-@media (min-width:300px) {
+@media (min-width:300px) { 
 
     .fa{
         margin-left: 400px;
@@ -72,4 +140,4 @@ position: absolute;
             
     }
     
-
+}

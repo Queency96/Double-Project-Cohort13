@@ -2,6 +2,19 @@
 
 .container-fluid{
     position: relative;
+   
+}
+
+.youtube a{
+    color: black;
+}
+
+.icon{
+
+    margin-right: 20px;
+}
+.icon a{
+    padding: 10px;
 }
 
 .move{
@@ -26,136 +39,60 @@
     text-decoration: none;
     margin-top: 20px;
 
- }
+ } 
+ nav{
+    border-bottom: 2px solid gray;
+ }   
 
-
-.tems:hover{
-    text-decoration: underline solid;
-
-    margin-top: 30px;
-
-    
-}
 .spec{
     margin-top: 40px;
-}
-
-
-
-/* .playlist_titlea {
-    color: black;
-} */
-
-
-/* 
-/* .afro{
-margin-right:100;
-}
-
-.music{
-    display:flex;
-    flex-direction: row;
 
 }
-.music a{
-    text-decoration: none;
-    font-size: small;
-    padding-left: 20px;
 
-}
-.d-flex{
-    justify-content: flex-end;
-    position: absolute;
-    margin-left: 1250px;
-    margin-top: -15px;
-    padding-left: 20px;
-}
-
-.cross-over{
-    display:flex;
-    /* flex-direction:row; */
-    /* position:relative; */
-    /* margin: 10px; */
-    /* padding-right: -20px; */
-    
-/* 
-}
-.cross-over  a{
-    text-decoration: none;
-    font-size: 16px;
-    padding-left: 20px;
-
-}
-.wait{
-    display:flex;
-    flex-direction:column;
-    position: relative;
-    margin: 10px;
-}
-
-.wait a{
-   text-decoration: none;
-    font-size: 16px;
-    padding-left: 10px;
-}
-.fa-solid{
-    justify-content: end;
-
-} */
+.spec a:hover{
+    padding-bottom: 14px;
+    border-bottom: 2px solid gray;
+     
+ 
+  }
 
 
-@media (min-width:275px) {
+/* footer design here */
 
-    .fa{
-        
-            
-    } */
-
-
-
-
-
-
-
-/* .spec{
-    margin-top: 40px;
-    padding: 40PX;
-    justify-content: space-between;
-}
-
-hr{
-    width: 200%;
-}
-
-
-.txt a{
-    text-decoration: none;
-} */
-
-/* .tems a:hover::before{
+footer{
+    padding: 10px 0px;
+    margin-top: 48px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    text-decoration: underline;
-
-}  */
-
-
-/* 
- .tems a{
-    position: relative;
-    font-size: 20px;
-    font-weight: 300;
-    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid lightgray;  
     
-} 
+    }
+    
+    footer ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: black;
+    
+    }
+    
+    footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+    }
+    
+    footer span{
+    font-size: 12px;
+    font-weight:400;
+    }
+    
 
-a ::before{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    height: 6px;
-    width: 0;
-    border-radius: 25px;
-    transition: 0.5em;
-/* 
-} */ */ */ */
- */
+
