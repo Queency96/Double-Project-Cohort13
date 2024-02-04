@@ -110,3 +110,7 @@ div .todays-mobile {
     background-color: lightgray;
     padding: 10px;
 }
+
+.sidebar{
+  z-index: 3000;
+}

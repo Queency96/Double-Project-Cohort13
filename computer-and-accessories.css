@@ -326,6 +326,7 @@ input[type='search'] {
   top: 40px;
   transition: 0.5s;
   background-color: white;
+  z-index: 3000;
 }
 
 #check:checked ~ .sidebar {
@@ -658,5 +659,3 @@ ul {
 .row {
   margin-bottom: 20px;
 }
-
-
